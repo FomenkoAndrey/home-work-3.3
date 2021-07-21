@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <div class="bg-wallpaper"></div>
+
+    <header class="header">
+        <div class="container">
+            <ul class="navbar-list">
+                <li><a class="navbar-link" href="../index.html">Главная</a></li>
+                <li><a class="navbar-link" href="articles.html">Статьи</a></li>
+                <li><a class="navbar-link" href="catalog.html">Каталог</a></li>
+                <li><a class="navbar-link" href="contacts.html">Контакты</a></li>
+                <li><a class="navbar-link" href="gallery.html">Галерея</a></li>
+                <li><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+                <li><a class="navbar-link" href="registration.html">Регистрация</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container content">
+
+        <h1>Регистрация</h1>
+
+        <form action="register.php" method="GET">
+            <fieldset>
+                <legend>#1 Базовые поля</legend>
+                <div class="form-group"><label>Фамлия, имя, отчество<input class="capitalized" name="lgn" type="text"
+                            placeholder="ФИО"></label></div>
+                <div class="form-group"><label>Добавьте фотографию<input name="photo" type="file"></label></div>
+                <div class="form-group"><label>Адрес электронной почты<input name="email" type="email"
+                            placeholder="e-mail"></label></div>
+                <div class="form-group"><label>Пароль<input name="pw" type="password" placeholder="Пароль" minlength="3"
+                            maxlength="12"></label></div>
+                <div class="form-group"><label>Адрес сайта<input name="site" type="url" placeholder="Адрес сайта"
+                            value="http://mysite.name"></label>
+                </div>
+                <div class="form-group"><label>Выбрать дату рождения<input name="bd" type="date"></label></div>
+            </fieldset>
+
+            <fieldset>
+                <legend>#2 Выбрать пол</legend>
+                <div class="form-group-sm"><input name="gender" value="male" type="radio" id="male">
+                    <label for="male">Мужской</label>
+                </div>
+                <div class="form-group-sm"><input name="gender" value="female" type="radio" id="female">
+                    <label for="female">Женский</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>#3 Выбрать предпочитаемую кухню</legend>
+                <div class="form-group-sm"><input name="kit" id="kit-ua" type="checkbox">
+                    <label for="kit-ua">Украинская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-cn" type="checkbox">
+                    <label for="kit-cn">Китайская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-jp" type="checkbox">
+                    <label for="kit-jp">Японская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-it" type="checkbox">
+                    <label for="kit-it">Итальянская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-fr" type="checkbox">
+                    <label for="kit-fr">Французская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-mx" type="checkbox">
+                    <label for="kit-mx">Мексиканская</label>
+                </div>
+                <div class="form-group-sm"><input name="kit" id="kit-th" type="checkbox">
+                    <label for="kit-th">Тайская</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>#4 О себе в произвольной форме</legend>
+                <div class="form-group">
+                    <label for="txt">Информация о себе</label>
+                    <textarea name="txt" id="txt" cols="70" rows="10" placeholder="О себе"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>#7 Кнопки управления формой</legend>
+                <div class="form-group"><input type="submit" value="Зарегистрироваться"></div>
+                <div class="form-group"><input type="reset" value="Очистить форму"></div>
+            </fieldset>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="container">&copy;2021</div>
+    </footer>
+
+</body>
+
+</html>
