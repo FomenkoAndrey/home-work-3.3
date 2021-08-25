@@ -2,64 +2,66 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <div class="bg-wallpaper"></div>
+<div class="bg-wallpaper"></div>
 
-    <header class="header">
-        <div class="container">
-            <ul class="navbar-list">
-                <li><a class="navbar-link" href="../index.html">Главная</a></li>
-                <li><a class="navbar-link" href="articles.html">Статьи</a></li>
-                <li><a class="navbar-link" href="catalog.html">Каталог</a></li>
-                <li><a class="navbar-link" href="contacts.html">Контакты</a></li>
-                <li><a class="navbar-link" href="gallery.html">Галерея</a></li>
-                <li><a class="navbar-link" href="page-nav.html">Навигация</a></li>
-                <li><a class="navbar-link" href="registration.html">Регистрация</a></li>
-            </ul>
-        </div>
-    </header>
+<header class="header">
+  <div class="container">
+    <ul class="navbar-list">
+      <li><a class="navbar-link" href="../index.html">Главная</a></li>
+      <li><a class="navbar-link" href="articles.html">Статьи</a></li>
+      <li><a class="navbar-link" href="catalog.html">Каталог</a></li>
+      <li><a class="navbar-link" href="contacts.html">Контакты</a></li>
+      <li><a class="navbar-link" href="gallery.html">Галерея</a></li>
+      <li><a class="navbar-link" href="page-nav.html">Навигация</a></li>
+      <li><a class="navbar-link" href="registration.html">Регистрация</a></li>
+    </ul>
+  </div>
+</header>
 
-    <div class="container content">
+<div class="container content">
 
-        <h1>Контакты</h1>
+  <h1>Контакты</h1>
 
-        <div class="contacts-info">
-            <p>г. Харьков, пл. Конституции,<br>
-                "Детский мир"</p>
-        </div>
-        <div class="contacts-info"><iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.103838632752!2d36.22967605094425!3d49.99066262816788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f0fe13b777%3A0x5d53327e09f19475!2z0JTQuNGC0Y_Rh9C40Lkg0YHQstGW0YI!5e0!3m2!1sru!2sua!4v1625254843232!5m2!1sru!2sua"
-                width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+  <div class="contacts-info">
+    <p>г. Харьков, пл. Конституции,<br>
+      "Детский мир"</p>
+  </div>
+  <div class="contacts-info">
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2565.103838632752!2d36.22967605094425!3d49.99066262816788!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0f0fe13b777%3A0x5d53327e09f19475!2z0JTQuNGC0Y_Rh9C40Lkg0YHQstGW0YI!5e0!3m2!1sru!2sua!4v1625254843232!5m2!1sru!2sua"
+        width="800" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </div>
 
-        <form action="contacts.php" method="GET">
-            <fieldset>
-                <legend>Обратная связь</legend>
-                <div class="form-group"><label>Фамлия, имя, отчество<input name="nm" type="text"
-                            placeholder="ФИО"></label></div>
-                <div class="form-group"><label>Телефон<input name="tl" type="tel" placeholder="Номер телефона"></label>
-                </div>
-                <div class="form-group"><label>Адрес электронной почты<input name="em" type="email"
-                            placeholder="e-mail"></label></div>
-                <div class="form-group">
-                    <label for="qu">Введите вопрос</label>
-                    <textarea name="quest" id="qu" cols="70" rows="10" placeholder="Вопрос"></textarea>
-                </div>
-                <div class="form-group"><input type="submit" value="Отправить"></div>
-            </fieldset>
-        </form>
-    </div>
+  <form action="contacts.php" method="GET">
+    <fieldset>
+      <legend>Обратная связь</legend>
+      <div class="form-group"><label>Фамлия, имя, отчество<input name="nm" type="text"
+                                                                 placeholder="ФИО"></label></div>
+      <div class="form-group"><label>Телефон<input name="tl" type="tel" placeholder="Номер телефона"></label>
+      </div>
+      <div class="form-group"><label>Адрес электронной почты<input name="em" type="email"
+                                                                   placeholder="e-mail"></label></div>
+      <div class="form-group">
+        <label for="qu">Введите вопрос</label>
+        <textarea name="quest" id="qu" cols="70" rows="10" placeholder="Вопрос"></textarea>
+      </div>
+      <div class="form-group"><input type="submit" value="Отправить"></div>
+    </fieldset>
+  </form>
+</div>
 
-    <footer class="footer">
-        <div class="container">&copy;2021</div>
-    </footer>
+<footer class="footer">
+  <div class="container">&copy;2021</div>
+</footer>
 
 </body>
 
